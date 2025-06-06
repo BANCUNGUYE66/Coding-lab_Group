@@ -1,3 +1,4 @@
+# heart_monitor.py - Simulates real-time heart rate data logging
 import random
 import time
 from datetime import datetime
@@ -8,6 +9,6 @@ while True:
     heart_rate = random.randint(60, 100)
     
     with open("hospital_data/active_logs/heart_rate.log", "a") as f:
-        f.write(f"{timestamp} {device_id} {heart_rate}\n")
+        f.write(f"{timestamp} {device_id} {heart_rate}  # Logged by Methode D.\n")
     
     time.sleep(5)
