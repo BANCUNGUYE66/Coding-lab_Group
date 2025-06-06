@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# analyze_logs.sh - Analyzes hospital device logs and appends a report
+
 LOG_DIR="hospital_data/active_logs"
 REPORT_DIR="hospital_data/reports"
 mkdir -p "$REPORT_DIR"
@@ -16,6 +18,7 @@ analyze_log() {
     report_file="$REPORT_DIR/analysis_report.txt"
     echo -e "\n=== $log_name Report - $(date) ===" >> "$report_file"
     awk '{print $2}' "$log_file" | sort | uniq -c >> "$report_file"
+    echo "[$(date)] Analysis by Methode Duhujubumwe recorded for $log_name." >> "$report_file"
     echo "Report saved to $report_file"
 }
 
