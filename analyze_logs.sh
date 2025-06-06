@@ -16,6 +16,7 @@ analyze_log() {
     report_file="$REPORT_DIR/analysis_report.txt"
     echo -e "\n=== $log_name Report - $(date) ===" >> "$report_file"
     awk '{print $2}' "$log_file" | sort | uniq -c >> "$report_file"
+    echo "[$(date)] Analysis by Methode Duhujubumwe recorded for $log_name." >> "$report_file"
     echo "Report saved to $report_file"
 }
 
