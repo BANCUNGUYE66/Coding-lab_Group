@@ -1,8 +1,3 @@
-Sure! Here's a **concise and professional `README.md`** version written as a single flowing text, with key sections included (project overview, features, how to run, etc.) and clear proof of your contribution:
-
----
-
-````markdown
 # Hospital Data Monitoring & Archival System
 
 This project is a group-based assignment simulating a hospital data monitoring and archiving system using Python and Bash shell scripts. It demonstrates skills in real-time data collection, interactive scripting, log file management, and analysis using Linux CLI tools. I collaborated with my team by contributing to both scripting and testing parts of the project.
