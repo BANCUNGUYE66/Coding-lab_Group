@@ -37,5 +37,3 @@ tail -f hospital_data/active_logs/heart_rate.log
 ```
 
 All contributions were made collaboratively, and tracked via GitHub commits as required. This project helped us practice shell scripting, automation, and log-based data analysis in a real-world-like setup.
-
-```
